@@ -1,10 +1,10 @@
-# Tag Checker
+# Tag Detector
 
 A comprehensive Python tool for detecting marketing and analytics tags on websites, including Google Tag Manager, Tealium, Meta Pixel, TikTok Pixel, and more.
 
 ## Overview
 
-Tag Checker analyzes websites to detect the presence of various marketing and analytics tags. It performs both static HTML analysis and dynamic JavaScript execution to catch tags that load progressively or after user interaction.
+Tag Detector analyzes websites to detect the presence of various marketing and analytics tags. It performs both static HTML analysis and dynamic JavaScript execution to catch tags that load progressively or after user interaction.
 
 ## Features
 
@@ -51,8 +51,8 @@ Without Playwright, the tool runs in static-only mode, which is faster but may m
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/tag-checker.git
-cd tag-checker
+git clone https://github.com/yourusername/tag-Detector.git
+cd tag-Detector
 ```
 
 2. Install dependencies:
@@ -86,13 +86,13 @@ output_file = 'tag_detection_results.csv'
 
 3. Run the script:
 ```bash
-python tag_checker.py
+python tag_Detector.py
 ```
 
 ### Configuration Options
 
 ```python
-checker = tagchecker(
+Detector = tagDetector(
     use_javascript=True,    # Enable/disable JavaScript execution
     timeout=20,             # Timeout in seconds
     max_workers=2,          # Concurrent workers
@@ -160,7 +160,7 @@ class CustomTagDetectorPlugin(TagDetectorPlugin):
 
 Register your plugin:
 ```python
-checker.register_plugin('custom_tag', CustomTagDetectorPlugin())
+Detector.register_plugin('custom_tag', CustomTagDetectorPlugin())
 ```
 
 ## Limitations
