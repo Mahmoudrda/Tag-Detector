@@ -170,13 +170,3 @@ Detector.register_plugin('custom_tag', CustomTagDetectorPlugin())
 - Heavy JavaScript sites may require longer timeouts
 - Rate limiting may affect large batch processing
 
-
-## Troubleshooting
-
-**Playwright not installed**: The tool will run in static-only mode. Install Playwright for full functionality.
-
-**Timeout errors**: Increase the `timeout` parameter or check your internet connection.
-
-**Missing CSV column**: Ensure your CSV has the correct column name specified in `url_column_name`.
-
-**Memory issues**: Reduce `max_workers` for large URL batches.
